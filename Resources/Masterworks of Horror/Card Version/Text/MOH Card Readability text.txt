@@ -1,0 +1,85 @@
+Iteration 1 - Tabletop Prototype
+
+The earliest card design was entirely text-based and used solely for our tabletop testing of the game. This first version lists every stat, keyword, and ability definition on the card itself. While thorough, we quickly realized that this amount of data on what will eventually be a real time card game will be far too overwhelming for a player.
+
+Key Pain Points
+
+Too much text that overwhelms the player, only playable because the current game is turn based for paper prototyping.
+Mechanics used are complex but not fun.
+Some Mechanics we like are becoming arbitrary.
+
+Key Takeaways
+If we want a fun game when we switch to real time, we need to reduce stats.
+Text is very daunting for new players to read, need to find a different way to represent stats.
+Some mechanics are too complex for real time players to grasp, need to find what really matters to our game and discard the rest.
+
+
+Iteration 2 - First Visual Pass
+
+Our first introduction of art while also having a more structured layout. Having stats with icons seems to be very helpful for players to understand where to look on the card for certain key information. We also introduced some literary text from the card's original story it was based on but this takes up valuable space on the card. Removing the explanation of keywords add more space to play around with but we still have too much text on the card.
+
+Key Pain Points
+We still have too much text on the card which slows gameplay down.
+Mechanics were reduced but there needs to be a structure on the card for good player comprehension.
+Symbols are too large and detract from the theme of the card.
+
+Key Takeaways
+Players began to understand mechanics more with new layout so trending in right direction
+Quotes from the original text is fun but we will need to figure out what is our priority
+Need to reduce the amount of card mechanics even further.
+
+Iteration 3 - Layout Refinement
+
+After working with our art team, we were able to create an even more cohesive structure for our cards. That being said, it was apparent that there was even more we would need to cut from our descriptions for faster comprehension.
+
+We realized that more keywords and more stats did not always equal a more in depth game. When testing we also heard players voice concerns over the text size, saying it was far too small to quickly read.
+
+Key Pain Points
+There is still too much text and structuring it a certain way will not add to understanding.
+Mechanics need to be reduced further so players can retain all of them.
+Text is too small on the card.
+
+Key Takeaways
+Our game is fun but our own mechanics are getting in the way of its success.
+Not all of our stats were being considered so we should focus our game on the most key ones.
+Text readability and clarity is going to be very important for our game's success.
+
+Iteration 4 - Simplification of Design
+
+Two major differences came from this wave of design. The first being that we removed all text besides major stats and the card's name from the card itself. We began using our in engine build and found that having a window pop up containing all of the card's information along side the card itself was much more efficient and less overwhelming to the player. 
+
+The second being, we introduced a maximum amount of both keywords words in general. This constraint was very challenging to design around but allowed us to really give each card a meaningful role.
+
+Key Pain Points
+Players voiced concerns over card structure legibility
+Players were not picking up on the different card types at all
+Cards seemed to have too many artistic pieces that did not add function to the card
+
+Key Takeaways
+Our entire redesign seemed to have helped with player understanding
+Our card art will need to have function that matches our aesthetic so players can easily recognize card types
+The cards are feeling more meaningful now that they have specific jobs
+
+Iteration 5 - Visual Identity Pass
+
+Our design of cards continued to evolve with a new border concept that would signify the difference between our three card types. Our stats were further emphasized by having a bolder color to be more eye catching to our players. While testing, players were still having trouble telling the difference between the card types so it was apparent we need to further be more exact with our design and layouts. 
+
+A similar pitfall we were having came from our team that was expressing the overall aesthetic seemed to be more subdued and not as lively as previous designs. We had solved our issued of presenting the players with a readable card but we needed to now make it visually compelling.
+
+Key Pain Points
+Players are still unable to differentiate between our card types
+The overall card layout was not visually compelling
+
+Key Takeaways
+The card is doing its job of communicating its stats
+We have achieve functionality so we can move on to adding artistic vision.
+
+Iteration 6 - Final Design
+The final card layout not only includes polished and clear stat gems that house our crucial information for the card, but also has a new visually interesting frame. This frame not only communicates the card type, but also communicates the author that the card belongs to without adding to much visual information to overwhelm the player. In testing, players were able to identify the card type, understand the cards role, and even understand the author that the card belonged to.
+
+Key Pain Points
+No pain points
+
+Key Takeaways
+Players can now quickly understand all of the card's components without having to focus on it, therefore not taking away from their game experience.
+

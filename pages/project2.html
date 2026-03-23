@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>USC Games Expo | Miles Gonzales</title>
+  <link rel="stylesheet" href="../styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+  <style>
+    .project-hero {
+      padding: 8rem 2.5rem 4rem;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    .project-hero .project-tag {
+      position: static;
+      display: inline-block;
+      margin-bottom: 1rem;
+    }
+    .project-hero h1 {
+      font-family: var(--font-display);
+      font-size: clamp(2rem, 4vw, 3rem);
+      font-weight: 700;
+      letter-spacing: -0.02em;
+      margin-bottom: 1rem;
+    }
+    .project-hero .lead {
+      color: var(--text-muted);
+      font-size: 1.225rem;
+      line-height: 1.7;
+      max-width: 640px;
+      margin-bottom: 2rem;
+    }
+    .project-body {
+      max-width: 1400px;
+      margin: 0 auto;
+      padding: 0 2.5rem 6rem;
+    }
+    .project-body h2 {
+      font-family: var(--font-display);
+      font-size: 1.75rem;
+      font-weight: 700;
+      margin: 2.5rem 0 1rem;
+    }
+    .project-body p {
+      color: var(--text-muted);
+      font-size: 1.125rem;
+      line-height: 1.8;
+      margin-bottom: 1rem;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      color: var(--accent);
+      text-decoration: none;
+      font-size: 0.9rem;
+      font-weight: 500;
+      margin-bottom: 2rem;
+      transition: color 0.2s;
+    }
+    .back-link:hover { color: var(--accent-hover); }
+
+    .expo-gallery {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1rem;
+      margin: 2rem 0;
+    }
+    .expo-gallery img {
+      width: 100%;
+      aspect-ratio: 4/3;
+      object-fit: cover;
+      border-radius: 12px;
+      transition: transform 0.3s;
+    }
+    .expo-gallery img:hover {
+      transform: scale(1.02);
+    }
+
+    .challenge-pillars {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      margin: 2rem 0;
+      align-items: start;
+    }
+    .challenge-pillar {
+      background: var(--surface);
+      border: 1px solid var(--border);
+      border-radius: 12px;
+      padding: 1.75rem;
+    }
+    .challenge-pillar h3 {
+      font-family: var(--font-display);
+      font-size: 1.35rem;
+      font-weight: 700;
+      color: var(--text);
+      margin: 0 0 0.75rem;
+      white-space: nowrap;
+    }
+    .challenge-pillar p {
+      color: var(--text-muted);
+      font-size: 1rem;
+      line-height: 1.7;
+      margin-bottom: 0.75rem;
+    }
+    .challenge-pillar ul {
+      list-style: disc;
+      padding-left: 1.5rem;
+      color: var(--text);
+      margin-bottom: 0;
+      font-size: 1rem;
+      line-height: 1.8;
+    }
+    .challenge-dropdown {
+      margin-top: 0.75rem;
+      overflow: hidden;
+    }
+    .challenge-dropdown-toggle {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 100%;
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      color: var(--text);
+      font-size: 1rem;
+      font-weight: 500;
+      padding: 0.7rem 1rem;
+      cursor: pointer;
+      transition: background 0.2s, border-color 0.2s;
+    }
+    .challenge-dropdown-toggle:hover {
+      background: rgba(255, 255, 255, 0.08);
+      border-color: #fff;
+    }
+    .challenge-dropdown-toggle .arrow {
+      transition: transform 0.3s;
+      font-size: 0.65rem;
+      opacity: 0.7;
+    }
+    .challenge-dropdown-toggle.open {
+      border-color: #fff;
+      border-bottom-left-radius: 0;
+      border-bottom-right-radius: 0;
+    }
+    .challenge-dropdown-toggle.open .arrow {
+      transform: rotate(180deg);
+    }
+    .challenge-dropdown-content {
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.4s ease, padding 0.3s ease;
+      padding: 0 1rem;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      border-top: none;
+      border-radius: 0 0 8px 8px;
+      opacity: 0;
+      transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+    }
+    .challenge-dropdown-content.open {
+      max-height: 300px;
+      padding: 0.75rem 1rem;
+      opacity: 1;
+      border-color: #fff;
+    }
+
+    @media (max-width: 768px) {
+      .project-hero { padding: 6rem 1.5rem 2rem; }
+      .project-body { padding: 0 1.5rem 4rem; }
+      .expo-gallery { grid-template-columns: repeat(2, 1fr); }
+      .challenge-pillars { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+  <nav class="navbar">
+    <a href="../index.html" class="nav-logo">Miles Gonzales</a>
+  </nav>
+
+  <!-- ── Hero ── -->
+  <section class="project-hero">
+    <a href="../index.html#projects" class="back-link">&larr; Back to Projects</a>
+    <span class="project-tag">Project Management</span>
+    <h1>USC Games Expo</h1>
+    <p class="project-role" style="color: var(--text); font-weight: 600; font-size: 1.1rem; margin-bottom: 0.5rem;">Project Manager</p>
+    <p class="lead">The USC Games Expo is USC's annual showcase of student and alumni games.</p>
+    <p style="color: var(--text-muted); font-size: 1.125rem; margin-bottom: 1rem;"><strong style="color: var(--text);">Tools and Skills Used:</strong> Excel Sheets, Zoom meetings, Collaboration, Soft skills</p>
+    <div style="margin-bottom: 2rem;">
+      <a href="https://www.uscgamesexpo.com/" class="btn btn-outline" target="_blank" rel="noopener">Expo Website</a>
+    </div>
+    <img src="../Resources/USC%20Games%20Expo/Preview%20Project%20Photos/gamer.jpg" alt="USC Games Expo" style="width: 100%; border-radius: 12px; margin-bottom: 3rem;">
+  </section>
+
+  <div class="project-body" style="padding-top: 0;">
+    <h2>Overview</h2>
+    <p>The USC Games Expo is an annual showcase event hosted by the USC Games program. This expo brings together students, educators, industry professionals, and the general public to celebrate the amazing games our student and alumni have produced throughout the previous year. This year we are celebrating the 10th anniversary of the USC Games Expo and are poised to have the most attendees and submissions in the expo's history.</p>
+
+    <h2>My Role</h2>
+    <p>As Project Manager, I am responsible for the overall success of the USC Games Expo by assisting the Expo Director. Together we have successfully built and maintained a thriving expo that has been the culmination of year's worth of student games.</p>
+    <h3 style="font-family: var(--font-display); font-size: 1.15rem; font-weight: 600; margin: 1rem 0 0.5rem; color: var(--text);">Responsibilities</h3>
+    <ul style="list-style: disc; padding-left: 1.5rem; color: var(--text); margin-bottom: 1rem; font-size: 1.125rem; line-height: 1.8;">
+      <li>Scheduling and coordination &mdash; managed, assigned, and assisted a group of 50+ jury members in judging student submissions for this expo</li>
+      <li>Expo layout design &mdash; created layouts of the expo grounds which incorporated over 80 booths from varying parties all within site regulations</li>
+      <li>Managed showcases &mdash; directly oversaw the successful showcase of our games in a sneak preview to potential new university students, industry personnel, and educators</li>
+      <li>Direct support &mdash; supported the Expo Director with any additional tasks that are required to ensure a successful event</li>
+    </ul>
+
+    <h2>Challenges</h2>
+    <p>An expo of this magnitude is not without some obstacles. There are three key obstacles that I have experienced while working as its project manager.</p>
+
+    <div class="challenge-pillars">
+      <div class="challenge-pillar">
+        <h3>Delegation of Resources</h3>
+        <p>Although USC is incredibly fortunate to have the resources to put on an event of this size, we must work within a budget as well as work with a finite amount of resources.</p>
+        <div class="challenge-dropdown">
+          <button class="challenge-dropdown-toggle" onclick="toggleDropdown(this)">Limited Resources include <span class="arrow">&#9660;</span></button>
+          <div class="challenge-dropdown-content">
+            <ul>
+              <li>Space for booths</li>
+              <li>TVs to displaying games</li>
+              <li>Computer monitors</li>
+              <li>Gaming systems</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="challenge-pillar">
+        <h3>Juror Feedback and Deliberation</h3>
+        <p>We are proud to have alumni of the USC Games act as jurors for what student games are able to showcase at expo, but having many jurors also presents challenges.</p>
+        <div class="challenge-dropdown">
+          <button class="challenge-dropdown-toggle" onclick="toggleDropdown(this)">Obstacles That Arise <span class="arrow">&#9660;</span></button>
+          <div class="challenge-dropdown-content">
+            <ul>
+              <li>Jurors are given links to projects that do not work</li>
+              <li>Builds of games are broken in some way</li>
+              <li>Jurors may become very busy and not finished by the due date for feedback</li>
+              <li>Jurors have different technology that does not always match certain games</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="challenge-pillar">
+        <h3>Collaboration and Innovation</h3>
+        <p>Each year brings new opportunities for us to seek out new ideas that may turn out to be out of reach. Nevertheless, we never stop looking for a viable improvement to this expo.</p>
+        <div class="challenge-dropdown">
+          <button class="challenge-dropdown-toggle" onclick="toggleDropdown(this)">Potential Ideas to Improve <span class="arrow">&#9660;</span></button>
+          <div class="challenge-dropdown-content">
+            <ul>
+              <li>LED wall for visuals</li>
+              <li>Live band performance from students</li>
+              <li>Expansion of grounds for larger spacing</li>
+              <li>New sponsors for the expo</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <h2>Results</h2>
+    <p>Insert results here</p>
+
+    <h2>Gallery</h2>
+    <div class="expo-gallery">
+      <img src="../Resources/USC%20Games%20Expo/IMG_7808.jpg" alt="USC Games Expo">
+      <img src="../Resources/USC%20Games%20Expo/IMG_7809.jpg" alt="USC Games Expo">
+      <img src="../Resources/USC%20Games%20Expo/IMG_7813.jpg" alt="USC Games Expo">
+      <img src="../Resources/USC%20Games%20Expo/IMG_7816.jpg" alt="USC Games Expo">
+      <img src="../Resources/USC%20Games%20Expo/IMG_7817.jpg" alt="USC Games Expo">
+      <img src="../Resources/USC%20Games%20Expo/IMG_7818.jpg" alt="USC Games Expo">
+    </div>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2026 Miles Gonzales</p>
+  </footer>
+
+  <script>
+    function toggleDropdown(btn) {
+      btn.classList.toggle('open');
+      btn.nextElementSibling.classList.toggle('open');
+    }
+  </script>
+  <script src="../script.js"></script>
+</body>
+</html>
